@@ -1,10 +1,12 @@
 import "./styles.css";
-
+import Navbar from "./components/Navbar";
+import Topbar from "./components/Topbar";
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello Team Members</h1>
-      <h2>React template</h2>
+    <div>
+      <Topbar/>
+      <Navbar />
+
     </div>
   );
 }
