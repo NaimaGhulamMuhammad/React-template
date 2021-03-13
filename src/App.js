@@ -1,12 +1,13 @@
 import "./styles.css";
-import Navbar from "./components/Navbar";
-import Topbar from "./components/Topbar";
+import Home from "./pages/Home";
+
 export default function App() {
+
   return (
     <div>
-      <Topbar/>
-      <Navbar />
+      <Home/>
 
+      
     </div>
   );
 }

@@ -3,7 +3,6 @@ import logo3 from "../img/logo-3.png";
 
 const Navbar = () => {
     return (
-        <div className="wraper">
 
             <div className="header-top contact_info">
 
@@ -128,7 +127,6 @@ const Navbar = () => {
                     </div>
                 </header>
             </div>
-        </div>
 
             );
 }
