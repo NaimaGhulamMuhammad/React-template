@@ -4,7 +4,6 @@ import logo3 from "../img/logo-3.png";
 const Navbar = () => {
     return (
 
-            <div className="header-top contact_info">
 
                 <header className="header index-2">
 
@@ -126,7 +125,6 @@ const Navbar = () => {
                         </nav>
                     </div>
                 </header>
-            </div>
 
             );
 }

@@ -5,11 +5,17 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@popperjs/core": "2.9.1",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
     "babel-runtime": "6.26.0",
+    "image-loaded": "0.0.2",
+    "isotope-layout": "3.0.6",
+    "jquery": "3.6.0",
+    "reac": "0.0.0",
     "react": "^17.0.1",
+    "react-bootstrap": "1.5.2",
     "react-dom": "^17.0.1",
     "react-owl-carousel": "2.3.3",
     "react-scripts": "4.0.3",
@@ -24,10 +30,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
