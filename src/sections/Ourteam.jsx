@@ -16,33 +16,18 @@ const Ourteam = () => {
           />
           <div className="col-lg-12 col-md-12 col-xs-12 content_sec">
             <div className="row">
-              <Teammember_card
-                pic={Sdata[0].pic}
-                name={Sdata[0].name}
-                position={Sdata[0].position}
-                content={Sdata[0].content}
-              />
-
-              <Teammember_card
-                pic={Sdata[1].pic}
-                name={Sdata[1].name}
-                position={Sdata[1].position}
-                content={Sdata[1].content}
-              />
-
-              <Teammember_card
-                pic={Sdata[2].pic}
-                name={Sdata[2].name}
-                position={Sdata[2].position}
-                content={Sdata[2].content}
-              />
-
-              <Teammember_card
-                pic={Sdata[3].pic}
-                name={Sdata[3].name}
-                position={Sdata[3].position}
-                content={Sdata[3].content}
-              />
+            {Sdata.map((data)=>{
+                const {pic,name,position,content} = data
+                return(
+                    <Teammember_card
+                    key={pic}
+                        pic={pic}
+                        name={name}
+                        position={position}
+                        content={content}
+                    />
+                )
+            })}
 
               <Buttonteam cname="view_more" link="javascript:void(0)" />
             </div>

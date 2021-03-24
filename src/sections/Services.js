@@ -58,6 +58,7 @@ const data = [
              {data.map((data)=>{
                  const {icon, title, content} = data
                  return(
+                     
                      <ServiceCard key={icon} icon={icon} title={title} content={content}/>
                  )
              })}

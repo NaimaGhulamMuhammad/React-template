@@ -1349,7 +1349,7 @@
 		this._items = [];
 
 		if (content) {
-			content = (content instanceof jQuery) ? content : $(content);
+			content = (content instanceof window.jQuery) ? content : $(content);
 		}
 
 		if (this.settings.nestedItemSelector) {
@@ -1381,7 +1381,7 @@
 		var current = this.relative(this._current);
 
 		position = position === undefined ? this._items.length : this.normalize(position, true);
-		content = content instanceof jQuery ? content : $(content);
+		content = content instanceof window.jQuery ? content : $(content);
 
 		this.trigger('add', { content: content, position: position });
 

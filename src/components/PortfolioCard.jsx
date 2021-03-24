@@ -1,8 +1,8 @@
 import React from "react";
 
-const PortfolioCard = ({ content, img_thumbnail, img_large }) => {
+const PortfolioCard = ({ content, img_thumbnail,cls, img_large }) => {
   return (
-    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 port-item design development">
+    <div className={`col-lg-4 col-md-6 col-sm-6 col-xs-12 port-item ${cls}`}>
       <div className="project portfolio-inner">
         <img src={img_thumbnail} alt="project" />
         <div className="label">

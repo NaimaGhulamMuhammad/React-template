@@ -1,4 +1,6 @@
- $(document).ready(function(){
+import $ from 'jquery';
+
+$(document).ready(function(){
     $('.owl-one').owlCarousel({
         loop:true, 
         margin:27,
