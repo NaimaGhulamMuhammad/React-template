@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from "../img/logo-3-footer.png"
+import logo from "../img/logo-3.png"
+import {Link} from "react-router-dom"
 function ServicesFooter() {
     return (
         <div>
@@ -9,21 +10,21 @@ function ServicesFooter() {
       <div className="row">
         <div className="col-lg-4 col-md-12 col-sm-12 column">
           <div className="footer_about_content">
-            <div className="footer_logo"><a href="index.html" title="Bizler"><img src={logo} alt="Bizler" /></a> </div>
+            <div className="footer_logo"><Link to="index.html" title="Bizler"><img src={logo} alt="Bizler" /></Link> </div>
             <p>Lorem Ipsum has been the {`industry's`} standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             <p>It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-            <a className="view_more" href="javascript:void(0)">View More</a> </div>
+            <Link className="view_more" to="/">View More</Link> </div>
         </div>
         <div className="col-lg-2 col-md-3 col-sm-3 col-xs-12 column">
           <h5>Navigation</h5>
           <div className="navigations">
             <ul>
-              <li><a href="index.html" title="Home"> Home</a></li>
-              <li><a href="about-us.html" title="About Us"> About Us</a></li>
-              <li><a href="services.html" title="Services"> Services</a></li>
-              <li><a href="blog-2-column.html" title="Blog"> Blog</a></li>
-              <li><a href="portfolio-2-column.html" title="Pages"> Portfolio</a></li>
-              <li><a href="contact-us-1.html" title="Contact Us"> Contact Us</a></li>
+              <li><Link to="/" title="Home"> Home</Link></li>
+              <li><Link to="/about" title="About Us"> About Us</Link></li>
+              <li><Link to="/services" title="Services"> Services</Link></li>
+              <li><Link to="/blog" title="Blog"> Blog</Link></li>
+              <li><Link to="/portfolio" title="Pages"> Portfolio</Link></li>
+              <li><Link to="/contactUs" title="Contact Us"> Contact Us</Link></li>
             </ul>
           </div>
         </div>
@@ -31,12 +32,12 @@ function ServicesFooter() {
           <h5>Useful Links</h5>
           <div className="navigations">
             <ul>
-              <li><a href="javascript:void(0)" title="Help Center">Help Center</a></li>
-              <li><a href="javascript:void(0)" title="Community"> Community</a></li>
-              <li><a href="javascript:void(0)" title="Sitemap"> Sitemap</a></li>
-              <li><a href="javascript:void(0)" title="Career"> Career</a></li>
-              <li><a href="javascript:void(0)" title="Privacy Policy"> Privacy Policy</a></li>
-              <li><a href="javascript:void(0)" title="FAQ's"> {`FAQ's`}</a></li>
+              <li><Link to="/" title="Help Center">Help Center</Link></li>
+              <li><Link to="/" title="Community"> Community</Link></li>
+              <li><Link to="/" title="Sitemap"> Sitemap</Link></li>
+              <li><Link to="/" title="Career"> Career</Link></li>
+              <li><Link to="/" title="Privacy Policy"> Privacy Policy</Link></li>
+              <li><Link to="/faqs" title="FAQ's"> {`FAQ's`}</Link></li>
             </ul>
           </div>
         </div>
@@ -48,7 +49,7 @@ function ServicesFooter() {
               <li> <i className="flat flaticon-phone-receiver"></i>0123-456-789, 0123-456-789 </li>
               <li> <i className="flat flaticon-mail-black-envelope-symbol"></i>info@bizler.com </li>
             </ul>
-            <div className="follow_us_on"> <a href="javascript:void(0)"><i className="flat flaticon-facebook-logo"></i></a> <a href="javascript:void(0)"><i className="flat flaticon-twitter"></i></a> <a href="javascript:void(0)"><i className="flat flaticon-google-plus-logo"></i></a> <a href="javascript:void(0)"><i className="flat flaticon-linkedin-logo"></i></a> <a href="javascript:void(0)"><i className="flat flaticon-instagram"></i></a> </div>
+            <div className="follow_us_on"> <Link to="/"><i className="flat flaticon-facebook-logo"></i></Link> <Link to="/"><i className="flat flaticon-twitter"></i></Link> <Link to="/"><i className="flat flaticon-google-plus-logo"></i></Link> <Link to="/"><i className="flat flaticon-linkedin-logo"></i></Link> <Link to="/"><i className="flat flaticon-instagram"></i></Link> </div>
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@ function ServicesFooter() {
             <h4>Our Newsletter</h4>
           </div>
           <div className="col-md-9">
-            <form action="https://wpshopmart.com/index.html">
+            <form action="/">
               <div className="row">
                 <div className="col-md-4">
                   <input type="text" placeholder="Name" />
@@ -83,12 +84,12 @@ function ServicesFooter() {
             <span className="separator-pipesign"></span>
             All Rights Reserved
             <span className="separator-pipesign"></span>
-            <a href="https://www.templateshub.net">Templates Hub</a></div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <a href="javascript:void(0)">Privacy Policy</a>
+            </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <Link to="/">Privacy Policy</Link>
             <span className="separator-pipesign"></span>
-            <a href="javascript:void(0)">Terms &amp; Conditions</a>
+            <Link to="/">Terms &amp; Conditions</Link>
             <span className="separator-pipesign"></span>
-            <a href="faq.html">{`FAQ's`}</a> </div>
+            <Link to="/faqs">{`FAQ's`}</Link> </div>
         </div>
     </div>
   </div>

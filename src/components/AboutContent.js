@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import imgabout from '../img/about_us_2.jpg'
 
 function AboutContent() {
@@ -14,7 +15,7 @@ function AboutContent() {
                 <div className="about-heading">Providing best business solution for growing your business</div>
                 <p>Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                 <p>Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <a className="defualt-button view_more" href="#">View More</a> </div>
+                <Link className="defualt-button view_more" to="/about">View More</Link> </div>
               </div>
             </div>
           </div>

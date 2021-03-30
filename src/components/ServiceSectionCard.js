@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const ServiceSectionCard = ({title,icon,content}) => {
 return (
     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 blog-iso-item">
@@ -10,7 +10,7 @@ return (
                 </div>
                 <div className="service_detail">
                     <h5>
-                        <a href="service-detail.html" title={title}>{title} </a>
+                        <Link to={`/${title}`} title={title}>{title} </Link>
                     </h5>
                     <p>{content}</p>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Testimonail_data} from "../Data/Home_Data";
 import TestimonialCard from "../components/TestimonialCard";
+import SectionHeader from "../components/SectionHeader";
 
 const Testimonial = () => {
     return(
@@ -8,16 +9,7 @@ const Testimonial = () => {
             <div className="container">
                 <div className="row row-reverse">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="section_heading">
-                            <h2>What <span>People Say</span></h2>
-                            <div className="separator">
-                                <ul>
-                                    <li> </li>
-                                    <li> </li>
-                                    <li> </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <SectionHeader title1="What" title2="People Say"/>
                         <div className="content_sec">
                             <div className="col-lg-12 col-md-12">
                                 <div className="testimonials-slider owl-four owl-carousel owl-theme">

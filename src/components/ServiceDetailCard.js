@@ -1,9 +1,8 @@
 import React from "react";
-import img1 from "../img/inner-banner.jpg";
 
 const ServiceDetail = () => {
   return (
-    <section id="inner-banner" style={{ backgroundImage: `url(${img1})` }}>
+    <section id="inner-banner" >
       <div className="container">
         <div className="row">
           <div className="inner-heading">

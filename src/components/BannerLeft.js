@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Headerleft(props){
     return(
@@ -17,7 +18,7 @@ function Headerleft(props){
                     </div>
                     <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <li className="breadcrumb-item"><a href="index-2.html" title="Home">Home</a></li>
+                        <li className="breadcrumb-item"><Link to="/" title="Home">Home</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">{props.l1}</li>
                     </ol>
                     </nav>

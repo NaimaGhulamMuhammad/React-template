@@ -1,43 +1,33 @@
 import React,{useEffect} from 'react';
-
+import {HCDAta} from "../Data/Home_Data"
 import Slider from "../sections/Slider"
-import Ourteam from "../sections/Ourteam";
+import OurTeam from "../sections/OurTeam";
 import AboutUs from "../sections/AboutUs";
 import Qualities from "../sections/Qualities"
-import BlogPost from "../sections/BlogPost"
+import Blog from "../sections/Blog"
 import Portfolio from "../sections/Portfolio"
 import Services from "../sections/Services"
 import Counter from "../sections/Counter"
-import OurClient from '../sections/OurClients';
 import Testimonial from "../sections/Testimonial"
+import OurClient from '../sections/OurClients';
+import Quickconnect from '../sections/QuickConnect';
 
 const Home = () => {
-  // useEffect($('.js-preloader').preloadinator({
-  //   minTime: 1000,
-  //   animationDuration: 400
-  // }),[])
+  
   return (
 <>
-          {/* <div className="preloader js-preloader flex-center">
-			<div className="dots">
-				<div className="dot"></div>
-				<div className="dot"></div>
-				<div className="dot"></div>
-			</div>
-		</div> */}
-    
-        
         <Slider />
         <Qualities />
         <AboutUs />
         <Services />
-        <Ourteam />
+        <OurTeam />
         <Portfolio />
-        <Counter />
-        <BlogPost />
+        <Counter data={HCDAta}/>
+        <Blog />
         <OurClient/>
         <Testimonial />
-
+        <Quickconnect />
+        
 </>
         );
 }

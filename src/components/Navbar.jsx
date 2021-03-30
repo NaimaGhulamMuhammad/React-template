@@ -1,132 +1,97 @@
 import React from "react";
 import logo3 from "../img/logo-3.png";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
-    return (
+  return (
+    <header className="header index-2">
+      <div className="container">
+        <nav className="navbar navbar-expand-lg">
+          <h2 className="nav-brand">
+            <Link className="navbar-brand" to="/" title="Bizler">
+              <img src={logo3} alt="Bizler" />
+            </Link>
+          </h2>
 
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#nav-content"
+            aria-controls="nav-content"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
+          </button>
 
-                <header className="header index-2">
+          <div className="main-menu collapse navbar-collapse" id="nav-content">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link to="/" className="nav-item nav-link">
+                  Home
+                </Link>
+              </li>
 
-                    <div className="container">
+              <li className="nav-item">
+                <Link to="/about" className=" nav-link">
+                  AboutUs
+                </Link>
+              </li>
 
-                        <nav className="navbar navbar-expand-lg">
+              <li className="nav-item dropdown">
+                <Link to="/services" className="nav-link dropdown-toggle">
+                  Services
+                </Link>
+                <ul className="dropdown-menu">
+                  <li className="dropdown-item">
+                    <Link to="/web Development">Web Development</Link>
+                  </li>
 
-                            <h2 className="nav-brand">
-                                <a className="navbar-brand" href="#" title="Bizler">
-                                    <img src={logo3} alt="Bizler"/>
-                                </a>
-                            </h2>
+                  <li className="dropdown-item">
+                    <Link to="/web Designing">Web Design</Link>
+                  </li>
 
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"/>
-                                <span className="navbar-toggler-icon"/>
-                                <span className="navbar-toggler-icon"/>
-                            </button>
+                  <li className="dropdown-item">
+                    <Link to="/web Hosting">Web Hosting</Link>
+                  </li>
 
-                            <div className="main-menu collapse navbar-collapse" id="nav-content">
+                  <li className="dropdown-item">
+                    <Link to="/digital Marketing">Digital Marketing</Link>
+                  </li>
 
-                                <ul className="navbar-nav">
+                  <li className="dropdown-item">
+                    <Link to="/services" className=" nav-link">
+                      All Services
+                    </Link>
+                  </li>
+                </ul>
+              </li>
 
-                                    <li className="nav-item dropdown active">
-                                        <a className="nav-item nav-link" href="#">Home</a>
-                                    </li>
+              <li className="nav-item">
+                <Link to="/portfolio" className=" nav-link">
+                  Portfolio
+                </Link>
+              </li>
 
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About Us</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="dropdown-item">
-                                                <a href="#">About Us 1</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+              <li className="nav-item">
+                <Link to="/blog" className=" nav-link">
+                  Blog
+                </Link>
+              </li>
 
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="dropdown-item">
-                                                <a href="#" title="Services 3">Services 3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+              <li className="nav-item">
+                <Link to="/contactUs" className=" nav-link">
+                  ContactUs
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};
 
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Portfolio</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="dropdown-item">
-                                                <a href="#" title="Services">Portfolio 3 Column</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Blog</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="dropdown-item">
-                                                <a href="#" title="Blog Detail">Blog Detail</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li className="nav-item dropdown megamenu">
-                                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
-                                        <ul className="dropdown-menu megamenu">
-
-                                            <li className="megamenu-column">
-                                                <ul>
-                                                    <li className="dropdown-item">
-                                                        <a href="#" title="Homepage 3">Homepage 3</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li className="megamenu-column">
-                                                <ul>
-                                                    <li className="dropdown-item">
-                                                        <a href="#" title="Services 2">Services 3</a>
-                                                    </li>
-                                                    <li className="dropdown-item">
-                                                        <a href="#" title="Service Detail">Service Detail</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li className="megamenu-column">
-                                                <ul>
-                                                    <li className="dropdown-item">
-                                                        <a href="#" title="Our Team 2">Our Team 2</a>
-                                                    </li>
-                                                    <li className="dropdown-item">
-                                                        <a href="#" title="Our Team 2">Our Team 3</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li className="megamenu-column">
-                                                <ul>
-                                                    <li className="dropdown-item">
-                                                        <a href="#" title="Blog 3 Column 2">Blog 3 Column 2</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Contact Us</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="dropdown-item">
-                                                <a href="#" title="Contact Us 2">Contact Us 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </header>
-
-            );
-}
-
-export default Navbar
+export default Navbar;

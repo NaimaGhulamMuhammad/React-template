@@ -1,6 +1,6 @@
 import React from 'react'
 import PricingCard from '../components/PricingCard'
-import Sectionheader from "../components/Sectionheader"
+import SectionHeader from "../components/SectionHeader"
 import {Sdata, Heading_data, Pdata} from '../Data/Home_Data'
 
 function Pricing(){
@@ -8,7 +8,7 @@ function Pricing(){
         <>
         <section id="pricing">
         <div className="container">           
-                <Sectionheader title1="Our " title2="Pricing" headingcontent={Heading_data[0].headingcontent}/>
+                <SectionHeader title1="Our " title2="Pricing" headingcontent={Heading_data[0].headingcontent}/>
                 <div className='col-lg-12 col-md-12 col-sm-6 col-xs-12 content_sec'>
                 <div className='row' >
                 

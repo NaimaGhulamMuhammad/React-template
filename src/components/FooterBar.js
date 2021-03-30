@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 function FooterBar() {
     return (
         <footer className="inner index-3">
@@ -7,17 +7,17 @@ function FooterBar() {
     <div className="container">
       <div className="navigation">
         <ul>
-          <li><a href="index.html" title="Homepage">Home</a></li>
+          <li><Link to="/" title="Homepage">Home</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="about-us-3.html" title="About Us">About Us</a></li>
+          <li><Link to="/about" title="About Us">About Us</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="services-3.html" title="Services">Services</a></li>
+          <li><Link to="/services" title="Services">Services</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="blog-3-column-3.html" title="Blog">Blog</a></li>
+          <li><Link to="/blog" title="Blog">Blog</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="portfolio-2-column.html" title="Pages">Portfolio</a></li>
+          <li><Link to="/portfolio" title="Pages">Portfolio</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="contact-us-1.html" title="Contact Us">Contact Us</a></li>
+          <li><Link to="/contactUs" title="Contact Us">Contact Us</Link></li>
         </ul>
       </div>
     </div>
@@ -29,12 +29,12 @@ function FooterBar() {
             <span className="separator-pipesign white"></span>
             All Rights Reserved
             <span className="separator-pipesign white"></span>
-            <a href="https://www.templateshub.net">Templates Hub</a></div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <a href="javascript:void(0)">Privacy Policy</a>
+            </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <Link to="/">Privacy Policy</Link>
             <span className="separator-pipesign white"></span>
-            <a href="javascript:void(0)">Terms &amp; Conditions</a>
+            <Link to="/">Terms &amp; Conditions</Link>
             <span className="separator-pipesign white"></span>
-            <a href="faq.html">{`FAQ's`}</a> </div>
+            <Link to="/faqs">{`FAQ's`}</Link> </div>
         </div>
       </div>
     </div>

@@ -12,15 +12,13 @@ function Slider() {
     return (
 
         <div className="slider index-3">
-            <OwlCarousel className="owl-main owl-carousel owl-theme" items={1} loop>
-                <Slide img={img1} title="Think Big Do Creative Grow Business " content={content1}/>
-                <Slide img={img2} title="Think Big Do Creative Grow Business " content={content1}/>
+            <OwlCarousel className="owl-main  owl-theme" items={1} loop>
+                <Slide img={img1} title="Think Big Do Creative Grow Business " content={content1} loop/>
+                <Slide img={img2} title="Think Big Do Creative Grow Business " content={content1} loop/>
                 <Slide img={img3} title="Think Big Do Creative Grow Business " content={content1}/>
                 <Slide img={img4} title="Think Big Do Creative Grow Business " content={content1}/>
-
             </OwlCarousel>
-    </div>
-
+        </div>
     );
 }
 

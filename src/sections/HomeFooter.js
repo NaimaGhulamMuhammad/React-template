@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from "../img/logo-3-footer.png"
 import blogThumb from "../img/recent-post-thumb-1.jpg"
 function HomeFooter() {
@@ -12,20 +13,20 @@ function HomeFooter() {
           <div className="detail">
             <p>Lorem Ipsum has been the {`industry's`} standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
           </div>
-          <a href="about-us-2.html" className="view_more" title="View More">View More</a> </div>
+          <Link to="/about" className="view_more" title="View More">View More</Link> </div>
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 latest-news">
           <div className="section_heading">Latest <span>News</span></div>
           <div className="post-item">
             <div className="post-img"> <img src={blogThumb} alt="post" /> </div>
             <div className="post-content">
-              <p><a href="blog-detail.html">Lorem Ipsum has been the {`industry's`} standard  dummy text ever since the 1500s.</a></p>
+              <p><Link to="/blog">Lorem Ipsum has been the {`industry's`} standard  dummy text ever since the 1500s.</Link></p>
               <div className="post-status"> 05/10/2018 </div>
             </div>
           </div>
           <div className="post-item">
             <div className="post-img"> <img src={blogThumb} alt="post" /> </div>
             <div className="post-content">
-              <p><a href="blog-detail.html">when an unknown printer took a galley of type and scrambled it to make a type.</a></p>
+              <p><Link to="/blog/1">when an unknown printer took a galley of type and scrambled it to make a type.</Link></p>
               <div className="post-status"> 06/10/2018 </div>
             </div>
           </div>
@@ -47,8 +48,8 @@ function HomeFooter() {
             <div className="icon"> <i className="flat flaticon-phone-receiver"></i> </div>
             <div className="detail">
               <h5>Call Us On</h5>
-              <div className="content"> Main Office :<span className="value"><a href="javascript:void(0)" title="0123-456-789"> 0123-456-789 </a></span> <br />
-                Customer Support :<span className="value"> <a href="javascript:void(0)" title="0123-456-789"> 0123-456-789 </a> </span> </div>
+              <div className="content"> Main Office :<span className="value"><Link to="/" title="0123-456-789"> 0123-456-789 </Link></span> <br />
+                Customer Support :<span className="value"> <Link to="/" title="0123-456-789"> 0123-456-789 </Link> </span> </div>
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 column">
@@ -62,7 +63,7 @@ function HomeFooter() {
             <div className="icon"> <i className="flat flaticon-share"></i> </div>
             <div className="detail">
               <h5>Follow Us On</h5>
-              <div className="content"> <a href="javascript:void(0)" title="Facebook" ><i className="flat flaticon-facebook-logo"></i></a> <a href="javascript:void(0)" title="Twitter" ><i className="flat flaticon-twitter"></i></a> <a href="javascript:void(0)" title="Google" ><i className="flat flaticon-google-plus-logo"></i></a> <a href="javascript:void(0)" title="Linkedin" ><i className="flat flaticon-linkedin-logo"></i></a> <a href="javascript:void(0)" title="Instagram" ><i className="flat flaticon-instagram"></i></a> </div>
+              <div className="content"> <Link to="/" title="Facebook" ><i className="flat flaticon-facebook-logo"></i></Link> <Link to="/" title="Twitter" ><i className="flat flaticon-twitter"></i></Link> <Link to="/" title="Google" ><i className="flat flaticon-google-plus-logo"></i></Link> <Link to="/" title="Linkedin" ><i className="flat flaticon-linkedin-logo"></i></Link> <Link to="/" title="Instagram" ><i className="flat flaticon-instagram"></i></Link> </div>
             </div>
           </div>
         </div>          
@@ -73,17 +74,17 @@ function HomeFooter() {
     <div className="container">
       <div className="navigation">
         <ul>
-          <li><a href="index.html" title="Homepage">Home</a></li>
+          <li><Link to="/" title="Homepage">Home</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="about-us-3.html" title="About Us">About Us</a></li>
+          <li><Link to="/about" title="About Us">About Us</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="services-3.html" title="Services">Services</a></li>
+          <li><Link to="/services" title="Services">Services</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="blog-3-column-3.html" title="Blog">Blog</a></li>
+          <li><Link to="/blog" title="Blog">Blog</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="portfolio-2-column.html" title="Pages">Portfolio</a></li>
+          <li><Link to="/portfolio" title="Pages">Portfolio</Link></li>
           <li className="separator-pipesign white"></li>
-          <li><a href="contact-us-1.html" title="Contact Us">Contact Us</a></li>
+          <li><Link to="/contactUs" title="Contact Us">Contact Us</Link></li>
         </ul>
       </div>
     </div>
@@ -95,12 +96,12 @@ function HomeFooter() {
             <span className="separator-pipesign white"></span>
             All Rights Reserved
             <span className="separator-pipesign white"></span>
-            <a href="https://www.templateshub.net">Templates Hub</a></div>
-          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <a href="javascript:void(0)">Privacy Policy</a>
+            2020</div>
+          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right"> <Link to="/">Privacy Policy</Link>
             <span className="separator-pipesign white"></span>
-            <a href="javascript:void(0)">Terms &amp; Conditions</a>
+            <Link to="/">Terms &amp; Conditions</Link>
             <span className="separator-pipesign white"></span>
-            <a href="faq.html">{`FAQ's`}</a> </div>
+            <Link to="/faqs">{`FAQ's`}</Link> </div>
         </div>
       </div>
     </div>

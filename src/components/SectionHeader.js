@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react"
 
-
-const Sectionheader = ({title1, title2, headingcontent}) => {
+const SectionHeader = ({title1, title2, headingcontent}) => {
     
     return(
-      <>
+    
       <div className="section_heading">
         <h2>{title1}<span>{title2}</span></h2>
           <div className="separator">
@@ -16,8 +15,8 @@ const Sectionheader = ({title1, title2, headingcontent}) => {
           </div>
         <div className="heading_content"> {headingcontent}</div>
       </div>
-      </>
+   
     );
 }
 
-export default Sectionheader
+export default SectionHeader

@@ -1,25 +1,25 @@
-import React from "react";
-import BannerLeft from "../components/BannerLeft";
-import AboutContent from "../components/AboutContent";
-import AboutDetail from "../sections/AboutDetail";
-import AboutQualities from "../sections/AboutQualities";
-import Ourteam from "../sections/Ourteam";
-import Counter from "../components/Counter";
+import React from 'react'
+import BannerLeft from '../components/BannerLeft'
+import AboutContent from "../components/AboutContent"
+import AboutDetail from "../sections/AboutDetail"
+import AboutQualities from "../sections/AboutQualities"
+import OurTeam from "../sections/OurTeam"
+import Counter from "../components/Counter"
 
 function About() {
-  return (
-    <>
-      <BannerLeft heading="About Us" />
-      <AboutContent />
-      <AboutQualities />
-      <AboutDetail />
-      <section id="counter" className="counter-inner">
-        <Counter />
+    return (
+        <>
+        <BannerLeft heading="About Us"/>
+        <AboutContent />
+        <AboutQualities />
+        <AboutDetail />
+        <section id="counter" className="counter-inner">
+        <Counter/>
         <div className="overlay"></div>
-      </section>
-      <Ourteam />
-    </>
-  );
+        </section>
+        <OurTeam/>
+        </>
+    )
 }
 
-export default About;
+export default About

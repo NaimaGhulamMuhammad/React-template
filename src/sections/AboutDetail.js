@@ -2,7 +2,7 @@ import React from 'react';
 import AboutDetailCard from '../components/AboutDetailCard'
 import { Aboutdetail_data } from '../Data/Home_Data';
 
-const AboutDetail = () => {
+const Aboutdetail = () => {
     const description = "Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     return (
         <>
@@ -32,4 +32,4 @@ const AboutDetail = () => {
     )
 }
 
-export default AboutDetail;
+export default Aboutdetail;

@@ -1,5 +1,5 @@
 import React from "react";
-import Sectionheader from "../components/Sectionheader";
+import SectionHeader from "../components/SectionHeader";
 import { Heading_data } from "../Data/Home_Data";
 
 import img1 from '../img/about_us_2.jpg'
@@ -10,7 +10,7 @@ const AboutUs = () => {
         <>
             <section id="our_team" className="index-3">
                 <div className="container">
-                    <Sectionheader
+                    <SectionHeader
                         title1="About"
                         title2="Us"
                         headingcontent={Heading_data[0].headingcontent}

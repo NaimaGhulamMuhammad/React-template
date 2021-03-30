@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ServiceCard({icon,title,content}) {
     return (
@@ -7,7 +8,7 @@ function ServiceCard({icon,title,content}) {
             <div className="connector"> <span></span> </div>
             <div className="service-card">
               <div className="service_detail">
-                <h5><a href="service-detail.html" title="Web Development">{title}</a></h5>
+                <h5><Link to={`/${title}`} title={title}>{title}</Link></h5>
                 <p>{content}</p>
               </div>
             </div>

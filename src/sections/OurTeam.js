@@ -1,15 +1,15 @@
 import React from "react";
-import Teammember_card from "../components/Teammember_card";
-import Sectionheader from "../components/Sectionheader";
-import Buttonteam from "../components/Buttonteam";
+import TeamMemberCard from "../components/TeamMemberCard";
+import SectionHeader from "../components/SectionHeader";
+import ButtonTeam from "../components/ButtonTeam";
 import { Sdata, Heading_data } from "../Data/Home_Data";
 
-const Ourteam = () => {
+const OurTeam = () => {
   return (
     <>
       <section id="our_team" className="index-3">
         <div className="container">
-          <Sectionheader
+          <SectionHeader
             title1={Heading_data[0].title1}
             title2={Heading_data[0].title2}
             headingcontent={Heading_data[0].headingcontent}
@@ -19,8 +19,8 @@ const Ourteam = () => {
             {Sdata.map((data)=>{
                 const {pic,name,position,content} = data
                 return(
-                    <Teammember_card
-                    key={pic}
+                    <TeamMemberCard
+                        key={pic}
                         pic={pic}
                         name={name}
                         position={position}
@@ -28,8 +28,7 @@ const Ourteam = () => {
                     />
                 )
             })}
-
-              <Buttonteam cname="view_more" link="javascript:void(0)" />
+              <ButtonTeam cname="view_more" link="/teamPage" />
             </div>
           </div>
         </div>
@@ -38,4 +37,4 @@ const Ourteam = () => {
     </>
   );
 };
-export default Ourteam;
+export default OurTeam;
