@@ -3,7 +3,6 @@ import BlogPost from '../components/BlogComponents/BlogPost'
 import Sidebar from '../components/BlogComponents/Sidebar'
 import BlogPostData from '../Data/BlogData'
 import {Link} from "react-router-dom"
-import DetailedBlog from "../pages/DetailedBlog"
 function BlogPageSection() {
   
     return (

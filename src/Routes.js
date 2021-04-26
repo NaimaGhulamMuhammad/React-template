@@ -15,7 +15,9 @@ import Faqs from "./pages/Faqs"
 import TeamPage from "./pages/TeamPage"
 import DetailedBlog from "./pages/DetailedBlog"
 import BlogPostData from './Data/BlogData';
-
+import ViewAbout from "./pages/viewAbout"
+import Career from "./pages/Career";
+import DetailedBusinessPartner from "./pages/DetailedBusinessPartner"
 function Routes() {
     const {webHosting,webDesigning,webDevelopment,digitalMarketing} = ServiceContent;
     const {photography,education,ecommerce,realEstate,restaurant, saloonSpa} = PortfolioData
@@ -23,6 +25,7 @@ function Routes() {
         <Switch>
             <Route exact path="/" render={(props) => <Home {...props} /> } />
             <Route exact path="/about" render={(props) => <About {...props} /> } />
+            <Route exact path="/mainAbout" render={(props) => <ViewAbout {...props} /> } />
             <Route exact path="/services" render={(props) => <Services {...props} /> } />
             <Route exact path="/web Hosting" render={(props) => <DetailedService {...props} content={webHosting} /> } />
             <Route exact path="/web Designing" render={(props) => <DetailedService {...props} content={webDesigning} /> } />
@@ -38,7 +41,9 @@ function Routes() {
             <Route exact path="/contactUs" render={(props) => <ContactUs {...props} /> } />
             <Route exact path="/Blog" render={(props) => <Blog {...props} /> } />
             <Route exact path="/teamPage" render={(props) => <TeamPage {...props} /> } />
+            <Route exact path="/career"  render={(props) => <Career {...props} /> } />
             <Route exact path="/Faqs" render={(props) => <Faqs {...props} /> } />
+            <Route exact path="/DetailedBusinessPartner" render={(props) => <DetailedBusinessPartner {...props} content={webHosting} />  } />
             {BlogPostData.map(data=>{
                 const {id} = data;
                 return(
