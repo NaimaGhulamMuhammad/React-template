@@ -15,7 +15,7 @@ function AboutContent() {
                 <div className="about-heading">Providing best business solution for growing your business</div>
                 <p>Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                 <p>Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Link className="defualt-button view_more" to="/about">View More</Link> </div>
+                <Link className="defualt-button view_more" to="/mainAbout">View More</Link> </div>
               </div>
             </div>
           </div>

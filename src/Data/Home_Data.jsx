@@ -40,28 +40,28 @@ const Sdata = [
     name: "Alec Thompson",
     position: "Developer",
     content:
-      `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     pic: img4,
     name: "Tania Andrew",
     position: "Designer",
     content:
-      `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     pic: img3,
     name: "Christian Mike",
     position: "Developer",
     content:
-      `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     pic: img2,
     name: "Rebecca Stormville",
     position: "Designer",
     content:
-      `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   }
 ];
 
@@ -69,49 +69,15 @@ const Heading_data = [
   {
     title1: "Our ",
     title2: "Team",
-    headingcontent: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
-  },
-];
-
-/////// PORTFOLIO SECTION DETAILS///////
-const Portfolio_data = [
-  {
-    content: "Photographary",
-    img_thumbnail: portfolio_a,
-    cls:"design development",
-    img_large: portfolio_A
+    headingcontent:`Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
   },
   {
-    content: "Ecommerce",
-    img_thumbnail: portfolio_b,
-    cls:"app logo",
-    img_large: portfolio_B
-  },
-  {
-    content: "Education",
-    img_thumbnail: portfolio_c,
-    cls:"development logo",
-    img_large: portfolio_C
-  },
-  {
-    content: "Real Estate",
-    img_thumbnail: portfolio_d,
-    cls:"design development logo",
-    img_large: portfolio_D
-  },
-  {
-    content: "Bar & Restaurant",
-    img_thumbnail: portfolio_e,
-    cls:"app web development",
-    img_large: portfolio_E
-  },
-  {
-    content: "Saloon & Spa",
-    img_thumbnail: portfolio_f,
-    cls:"design development",
-    img_large: portfolio_F
+    title1: "Portfolio ",
+    headingcontent:
+      `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
   }
 ];
+
 // ABout Deatil Data
 const Aboutdetail_data = [
   {
@@ -152,6 +118,45 @@ const AboutQualitiesData = [
       heading: "Leading Provider",
   }
 ]
+/////// PORTFOLIO SECTION DETAILS///////
+const Portfolio_data = [
+  {
+    content: "Photography",
+    img_thumbnail: portfolio_a,
+    img_large: portfolio_A,
+    cls:"design development"
+  },
+  {
+    content: "Ecommerce",
+    img_thumbnail: portfolio_b,
+    img_large: portfolio_B,
+    cls:"app logo"
+  },
+  {
+    content: "Education",
+    img_thumbnail: portfolio_c,
+    img_large: portfolio_C,
+    cls:"development logo"
+  },
+  {
+    content: "Real Estate",
+    img_thumbnail: portfolio_d,
+    img_large: portfolio_D,
+    cls:"design development logo"
+  },
+  {
+    content: "Bar & Restaurant",
+    img_thumbnail: portfolio_e,
+    img_large: portfolio_E,
+    cls:"app web development"
+  },
+  {
+    content: "Saloon & Spa",
+    img_thumbnail: portfolio_f,
+    img_large: portfolio_F,
+    cls:"design development"
+  }
+];
 //pricingdata
 const Pdata = [
   {
@@ -168,35 +173,35 @@ const Pdata = [
   }
 
 ]
-
+//Services Data
 const Services_Data = [
   {
     title: "Web Development",
-    icon: "flat flaticon-web-design",
+    icon: "web-design",
     content:
       `All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.`
   },
   {
     title: "Web Designing",
-    icon: "flat flaticon-computer-graphic",
+    icon: "computer-graphic",
     content:
       `All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.`
   },
   {
     title: "Web Hosting",
-    icon: "flat flaticon-servers",
+    icon: "servers",
     content:
       `All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.`
   },
   {
     title: "Digital Marketing",
-    icon: "flat flaticon-digital-marketing",
+    icon: "digital-marketing",
     content:
       `All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.`
   },
   {
     title: "SEO / SMO",
-    icon: "flat flaticon-computer-graphic",
+    icon: "computer-graphic",
     content:
       `All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.`
   }
@@ -207,38 +212,38 @@ const Testimonail_data = [
       pic:about_img1,
       name: "Rebecca Stormville" ,
       position:"Designer" ,
-      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
   },
   {
       pic:about_img1,
       name: "Rebecca Stormville" ,
       position:"Designer" ,
-      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
   },
   {
       pic:about_img1,
       name: "Rebecca Stormville" ,
       position:"Designer" ,
-      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
   },
   {
       pic:about_img1,
       name: "Rebecca Stormville" ,
       position:"Designer" ,
-      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
   },
   {
       pic:about_img1,
       name: "Rebecca Stormville" ,
       position:"Designer" ,
-      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
   },
 
   {
       pic:about_img1,
       name: "Rebecca Stormville" ,
       position:"Designer" ,
-      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      content:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
   },
 ]
 /////// OurClient Section Data ///////
@@ -262,5 +267,43 @@ const ClientData = [
       pic:ourclient_f
   },
 ]
+//Home Counter
+const HCDAta = [
+  {
+    icon:"happiness",
+    counter:200,
+    title:"Happy Client"
+  },
+  {
+    icon:"coffee-cup",
+    counter:750,
+    title:"Cups Of Coffee"
+  },
+  {
+    icon:"like",
+    counter:1800,
+    title:"Projects Done"
+  },
+  {
+    icon:"building",
+    counter:15,
+    title:"Office Location"
+  },
 
-export { Sdata, Heading_data,Testimonail_data, Portfolio_data,Pdata, Services_Data,ClientData,Aboutdetail_data ,AboutQualitiesData};
+]
+const SDDATA= [
+  {
+    counter:"87K",
+    title:"Projects Done"
+  },
+  {
+    counter:8782,
+    title:"Hours Work"
+  },
+  {
+    counter:682,
+    title:"Clients"
+  },
+
+]
+export { Sdata, Heading_data,Services_Data,HCDAta,SDDATA, Testimonail_data,Portfolio_data ,ClientData, Pdata,Aboutdetail_data,AboutQualitiesData};

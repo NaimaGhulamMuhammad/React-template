@@ -1,36 +1,41 @@
 import React,{useState, useEffect} from 'react'
-import Routes from "../Routes"
-import Navbar from "../components/Navbar";
-import Topbar from "../components/Topbar";
-import HomeFooter from "../sections/HomeFooter"
-import FooterBar from "../components/FooterBar"
-import ServicesFooter from "../sections/ServicesFooter"
+// import Routes from "../Routes"
+// import Navbar from "../components/Navbar";
+// import Topbar from "../components/Topbar";
+// import HomeFooter from "../sections/HomeFooter"
+// import FooterBar from "../components/FooterBar"
+// import ServicesFooter from "../sections/ServicesFooter"
+
+import ReactDOM from 'react-dom';
+import App from '../App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
-function Pages() {
-    const [footer , setFooter] = useState()
-    const path = window.location.pathname; 
-     useEffect(()=> {
-        if(path=="/") {
-            setFooter(HomeFooter) }
-        else if((path=="/about") || (path=="/services")) {
-        setFooter(FooterBar) 
-          }
-        else {
-            setFooter(ServicesFooter)   }
+// function Pages() {
+//     const [footer , setFooter] = useState()
+//     const path = window.location.pathname; 
+//      useEffect(()=> {
+//         if(path=="/") {
+//             setFooter(HomeFooter) }
+//         else if((path=="/about") || (path=="/services")) {
+//         setFooter(FooterBar) 
+//           }
+//         else {
+//             setFooter(ServicesFooter)   }
        
-    },[path])
+//     },[path])
     
-    return (
-        <>
-        <div className={`${path=="/services"|| path== "/about" ?'v2-inner':'wraper'}`}>
-        <Topbar />
-        <Navbar />
-        <Routes />
-        </div>
-        {footer}
-        </>
-    )
-}
+//     return (
+//         <>
+//         <div className={`${path=="/services"|| path== "/about" ?'v2-inner':'wraper'}`}>
+//         <Topbar />
+//         <Navbar />
+//         <Routes />
+//         </div>
+//         {footer}
+//         </>
+//     )
+// }
 
-export default Pages
+// export default Pages
