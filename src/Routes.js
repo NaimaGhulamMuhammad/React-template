@@ -17,6 +17,7 @@ import DetailedBlog from "./pages/DetailedBlog"
 import BlogPostData from './Data/BlogData';
 import ViewAbout from "./pages/viewAbout"
 import Career from "./pages/Career";
+import DetailedBusinessPartner from "./pages/DetailedBusinessPartner"
 function Routes() {
     const {webHosting,webDesigning,webDevelopment,digitalMarketing} = ServiceContent;
     const {photography,education,ecommerce,realEstate,restaurant, saloonSpa} = PortfolioData
@@ -42,6 +43,7 @@ function Routes() {
             <Route exact path="/teamPage" render={(props) => <TeamPage {...props} /> } />
             <Route exact path="/career"  render={(props) => <Career {...props} /> } />
             <Route exact path="/Faqs" render={(props) => <Faqs {...props} /> } />
+            <Route exact path="/DetailedBusinessPartner" render={(props) => <DetailedBusinessPartner {...props} content={webHosting} />  } />
             {BlogPostData.map(data=>{
                 const {id} = data;
                 return(
